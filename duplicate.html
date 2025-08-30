@@ -1355,7 +1355,115 @@
         </div>
       </div>
 
-      
+      <div class="standard__section">
+        <div class="padding__section">
+          <div class="w-layout-blockcontainer standard__container position__relative _1 w-container">
+            <div>
+              <div class="title__block centered">
+                <h2 class="standard__heading level-2">
+                  Frequently Asked Questions
+                </h2>
+                <div class="spacer-tiny"></div>
+                <p class="body__text large color__grey">
+                  You have questions, we have answers
+                </p>
+                <div class="spacer-tiny"></div>
+              </div>
+              <div class="standard__spacing large"></div>
+              <div>
+                <style>
+                  .video-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 24px
+                  }
+
+                  .video-card {
+                    border-radius: 8px;
+                    overflow: hidden;
+                  }
+
+                  .video-card__title {
+                    margin: 0;
+                    padding: 16px 16px;
+                    text-align: center;
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 1.2;
+                    background: #020203;
+                    min-height: 112px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                  }
+
+                  .video-card__player {
+                    position: relative;
+                    background: #000
+                  }
+
+                  .video-card__player wistia-player {
+                    width: 100%
+                  }
+
+                  wistia-player {
+                    display: block;
+                    width: 100%
+                  }
+
+                  wistia-player[media-id="n6r13jbsl1"]:not(:defined) {
+                    background: center/cover no-repeat url("https://fast.wistia.com/embed/medias/n6r13jbsl1.m3u8");
+                    display: block;
+                    filter: blur(0);
+                    padding-top: 56.25%
+                  }
+
+                  @media (max-width: 991px) {
+                    .video-grid {
+                      grid-template-columns: repeat(2, 1fr)
+                    }
+                    .video-card__title {
+                      min-height: 96px;
+                      font-size: 22px
+                    }
+                  }
+
+                  @media (max-width: 768px) {
+                    .video-grid {
+                      grid-template-columns: 1fr
+                    }
+                    .video-card__title {
+                      min-height: 84px;
+                      font-size: 20px
+                    }
+                  }
+                </style>
+                <div class="video-grid">
+                  <div class="video-card">
+                    <div class="video-card__title">What's Included In The Program?</div>
+                    <div class="video-card__player">
+                      <wistia-player media-id="n6r13jbsl1"></wistia-player>
+                    </div>
+                  </div>
+                  <div class="video-card">
+                    <div class="video-card__title">How Is This Program Different?</div>
+                    <div class="video-card__player">
+                      <wistia-player media-id="n6r13jbsl1" ></wistia-player>
+                    </div>
+                  </div>
+                  <div class="video-card">
+                    <div class="video-card__title">How Soon Can I See Results?</div>
+                    <div class="video-card__player">
+                      <wistia-player media-id="n6r13jbsl1"></wistia-player>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
   </section>
   <div class="footer">
