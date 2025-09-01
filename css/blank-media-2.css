@@ -882,7 +882,7 @@ h5 {
 }
 
 .footer-logo {
-  background-image: url('../images/Sustain-Media-Logo_1Sustain-Media-Logo.avif');
+  background-image: url('../images/logo-black.png');
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -940,7 +940,7 @@ h5 {
   grid-row-gap: 64px;
   aspect-ratio: 1;
   object-fit: cover;
-  background-image: linear-gradient(#000000a8 13%, #141415 87%);
+  background-image: linear-gradient(#ffffffa8 13%, #ffffff 87%);
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
@@ -951,7 +951,7 @@ h5 {
 }
 
 .footer-video {
-  background-image: linear-gradient(180deg, var(--primary-color) 8%, #1414156b);
+  background-image: linear-gradient(180deg, var(--primary-color) 8%, #ffffff6b);
   max-height: 402px;
   padding-bottom: 136px;
 }
@@ -1720,7 +1720,7 @@ h5 {
   justify-content: center;
   align-items: center;
   height: 4.8rem;
-  margin-bottom: -60px;
+  margin-bottom: -78px;
   display: flex;
   position: sticky;
   top: 0;
