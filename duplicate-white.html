@@ -11,7 +11,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="css/webflow.css" rel="stylesheet" type="text/css" />
-    <link href="css/blank-media-b0ecb2-cadaeecf447d1391361f.webflow.css" rel="stylesheet" type="text/css" />
+    <link href="css/blank-media-2.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
@@ -60,9 +60,19 @@
 
 
     .steps-div {
-        border: 1px solid white;
+        border: 1px solid rgb(0, 0, 0);
         border-radius: 40px;
         padding: 40px;
+    }
+
+    .benefit-card-my {
+        border: 1px solid #0000001a;
+        border-radius: 10px;
+        width: 480px;
+        max-width: 480px;
+        padding: 1rem;
+        font-size: 16px;
+        align-items: center;
     }
 
     .steps-div h3 {
@@ -133,11 +143,11 @@
     <section class="main-section">
 
         <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
-            role="banner" class="navbar__wrapper w-nav">
+            role="banner" class="navbar__wrapper__new w-nav">
             <div class="standard__container">
                 <div class="navbar">
-                    <a href="#" class="brand__logo w-nav-brand"><img src="images/sustain-logo-media.com.svg"
-                            loading="lazy" alt="Sustain Media logo" class="img--fullsize scaledown" /></a>
+                    <a href="#" class="brand__logo w-nav-brand"><img src="images/logo-black.png" loading="lazy"
+                            alt="Sustain Media logo" class="img--fullsize scaledown" /></a>
                     <div class="right__navbar">
                         <!-- <div class="menu-navwrapper">
                             <nav role="navigation" class="nav-menu w-nav-menu">
@@ -195,8 +205,8 @@
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
 
-                        <h4 class="standard__heading level-3 text-center secondary-heading">Message From Who You're
-                            Speaking To:<br>Noah
+                        <h4 class="standard__heading level-3 text-center secondary-heading">Quick Message From Who
+                            You're Speaking With:<br>Noah
                             Igler</h4>
 
                         <div class="spacer-tiny"></div>
@@ -240,7 +250,7 @@
                                 </h2>
                                 <div class="spacer-tiny"></div>
                                 <p class="body__text large color__grey">
-                                    You have questions, we have answers
+                                    You have questions, we have answers.
                                 </p>
                                 <div class="spacer-tiny"></div>
                             </div>
@@ -392,7 +402,7 @@
 
                             <div class="ranking-image-main-box">
                                 <div class="ranking-image">
-                                    <img src="images/Screenshot-2025-04-12-at-10.17.01-AM.jpg" alt="">
+                                    <img src="images/new-high-light-image.png" alt="">
                                 </div>
                             </div>
 
@@ -406,7 +416,7 @@
                                                 <img src="./images/person-icon.png" alt="" width="100px">
                                             </div>
                                             <div class="card-text bold">
-                                                185 Landscaping Leads in 30 Days
+                                                286 Landscaping Leads in 30 Days
                                             </div>
                                         </div>
 
@@ -415,7 +425,7 @@
                                                 <img src="./images/phone-icon.png" alt="" width="100px">
                                             </div>
                                             <div class="card-text bold">
-                                                135 Calls from Google
+                                                235 Calls in 30 Days
                                             </div>
                                         </div>
 
@@ -463,7 +473,7 @@
                                                     </h4>
                                                 </div> -->
                                                 <div class="middle">
-                                                    <img src="./images/red-map.png" alt="">
+                                                    <img src="./images/invisible.png" alt="">
                                                 </div>
                                                 <!-- <div class="bottom">
                                                     <h4 class="standard__heading level-4 center-text">
@@ -478,7 +488,7 @@
                                                     </h4>
                                                 </div> -->
                                                 <div class="middle">
-                                                    <img src="./images/green-map.png" alt="">
+                                                    <img src="./images/visible.png" alt="">
                                                 </div>
                                                 <!-- <div class="bottom">
                                                     <h4 class="standard__heading level-4 center-text">
@@ -506,14 +516,17 @@
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
-                        <p class="steps-text">Your <span class="bold">free-consultation</span> call will be a video call
+                        <p class="steps-text text-center">Your <span class="bold">free-consultation</span> call will be
+                            a video call
                             on Google Meets.</p>
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
-                        <p class="steps-text">We will text/email you multiple times with the Google Meet info.</p>
+                        <p class="steps-text text-center">We will text/email you multiple times with the Google Meet
+                            info.</p>
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
-                        <p class="steps-text">Click the link using a computer 5 minutes before the time you scheduled to
+                        <p class="steps-text text-center">Click the link using a computer 5 minutes before the time you
+                            scheduled to
                             join your call!</p>
                     </div>
                 </div>
@@ -637,6 +650,64 @@
                 // Implement your own logic to open the modal/lightbox here
                 openLightbox(modalContent); // Placeholder function, replace with your lightbox handling function
             });
+        });
+    </script>
+
+    <!-- Custom Navbar Scroll Effect -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector('.navbar__wrapper__new');
+
+            if (navbar) {
+                // Function to handle scroll effect
+                function handleScroll() {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                    if (scrollTop > 50) {
+                        // When scrolled down - apply white background
+                        navbar.style.backgroundColor = '#ffffff';
+                        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                        navbar.style.transition = 'all 0.3s ease';
+
+                        // Change logo to black version if it exists
+                        const logo = navbar.querySelector('.brand__logo img');
+                        if (logo && logo.src.includes('logo-black.png')) {
+                            // Logo is already black, no need to change
+                        } else if (logo) {
+                            logo.src = 'images/logo-black.png';
+                        }
+
+                        // Change text colors to dark for better contrast
+                        const navLinks = navbar.querySelectorAll('.navlink');
+                        navLinks.forEach(link => {
+                            link.style.color = '#333333';
+                        });
+
+                    } else {
+                        // When at top - transparent/transparent background
+                        navbar.style.backgroundColor = 'transparent';
+                        navbar.style.boxShadow = 'none';
+
+                        // Change logo back to original if needed
+                        const logo = navbar.querySelector('.brand__logo img');
+                        if (logo && logo.src.includes('logo-black.png')) {
+                            // Keep black logo for now, you can change this if you have a different logo
+                        }
+
+                        // Reset text colors
+                        const navLinks = navbar.querySelectorAll('.navlink');
+                        navLinks.forEach(link => {
+                            link.style.color = '#ffffff';
+                        });
+                    }
+                }
+
+                // Add scroll event listener
+                window.addEventListener('scroll', handleScroll);
+
+                // Call once on page load to set initial state
+                handleScroll();
+            }
         });
     </script>
 </body>
