@@ -3,8 +3,8 @@
   --white: rgb(0, 0, 0);
   --transparent: transparent;
   --secondery: #00b3ff;
-  --grey-100: #ffffff80;
-  --white-2: white;
+  --grey-100: #00000080;
+  --white-2: rgb(0, 0, 0);
 }
 
 .w-layout-blockcontainer {
