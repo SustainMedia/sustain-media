@@ -195,7 +195,8 @@
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
 
-                        <h4 class="standard__heading level-3 text-center secondary-heading">Quick Message From Who You're Speaking With:<br>Noah
+                        <h4 class="standard__heading level-3 text-center secondary-heading">Quick Message From Who
+                            You're Speaking With:<br>Noah
                             Igler</h4>
 
                         <div class="spacer-tiny"></div>
@@ -249,7 +250,7 @@
                                     .video-grid {
                                         display: grid;
                                         grid-template-columns: repeat(3, 1fr);
-                                        gap: 24px
+                                        gap: 24px;
                                     }
 
                                     .video-card {
@@ -275,68 +276,101 @@
 
                                     .video-card__player {
                                         position: relative;
-                                        background: #000
+                                        background: #000;
+                                        width: 100%;
+                                        padding-top: 177.78%;
+                                        overflow: hidden;
                                     }
 
-                                    .video-card__player wistia-player {
-                                        width: 100%
+                                    .video-card__player wistia-player,
+                                    .video-card__player iframe {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100% !important;
+                                        height: 100% !important;
                                     }
 
                                     wistia-player {
                                         display: block;
-                                        width: 100%
-                                    }
-
-                                    wistia-player[media-id="n6r13jbsl1"]:not(:defined) {
-                                        background: center/cover no-repeat url("https://fast.wistia.com/embed/medias/n6r13jbsl1.m3u8");
-                                        display: block;
-                                        filter: blur(0);
-                                        padding-top: 56.25%
+                                        width: 100%;
                                     }
 
                                     @media (max-width: 991px) {
                                         .video-grid {
-                                            grid-template-columns: repeat(2, 1fr)
+                                            grid-template-columns: repeat(2, 1fr);
                                         }
 
                                         .video-card__title {
                                             min-height: 96px;
-                                            font-size: 22px
+                                            font-size: 22px;
                                         }
                                     }
 
                                     @media (max-width: 450px) {
                                         .video-grid {
-                                            grid-template-columns: 1fr
+                                            grid-template-columns: 1fr;
                                         }
 
                                         .video-card__title {
                                             min-height: 84px;
-                                            font-size: 20px
+                                            font-size: 20px;
                                         }
                                     }
                                 </style>
+
+                                <script src="https://fast.wistia.com/player.js" async></script>
+                                <script src="https://fast.wistia.com/embed/medias/iax5t7dvlz.jsonp" async></script>
+                                <script src="https://fast.wistia.com/embed/medias/3g4iiblmqd.jsonp" async></script>
+                                <script src="https://fast.wistia.com/embed/medias/na1ve8dicw.jsonp" async></script>
+                                <script src="https://fast.wistia.com/embed/medias/rdksy326ue.jsonp" async></script>
+                                <script src="https://fast.wistia.com/embed/medias/le1mutyw0m.jsonp" async></script>
+
                                 <div class="video-grid">
-                                    <div class="video-card">
-                                        <div class="video-card__title">What's Included In The Program?</div>
-                                        <div class="video-card__player">
-                                            <wistia-player media-id="n6r13jbsl1"></wistia-player>
-                                        </div>
-                                    </div>
-                                    <div class="video-card">
-                                        <div class="video-card__title">How Is This Program Different?</div>
-                                        <div class="video-card__player">
-                                            <wistia-player media-id="n6r13jbsl1"></wistia-player>
-                                        </div>
-                                    </div>
                                     <div class="video-card">
                                         <div class="video-card__title">How Soon Can I See Results?</div>
                                         <div class="video-card__player">
-                                            <wistia-player media-id="n6r13jbsl1"></wistia-player>
+                                            <wistia-player media-id="iax5t7dvlz" seo="false"></wistia-player>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-card">
+                                        <div class="video-card__title">Can You Rank in ChatGPT and LLMs?</div>
+                                        <div class="video-card__player">
+                                            <wistia-player media-id="3g4iiblmqd" seo="false"></wistia-player>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-card">
+                                        <div class="video-card__title">Do You Help With Profile Suspensions?</div>
+                                        <div class="video-card__player">
+                                            <wistia-player media-id="na1ve8dicw" seo="false"></wistia-player>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-card">
+                                        <div class="video-card__title">Do You Require a Contract?</div>
+                                        <div class="video-card__player">
+                                            <wistia-player media-id="rdksy326ue" seo="false"></wistia-player>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-card">
+                                        <div class="video-card__title">Can I Pay You Per Lead?</div>
+                                        <div class="video-card__player">
+                                            <wistia-player media-id="le1mutyw0m" seo="false"></wistia-player>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-card">
+                                        <div class="video-card__title">How Do You Differ From Other Agencies?</div>
+                                        <div class="video-card__player">
+                                            <wistia-player media-id="le1mutyw0m" seo="false"></wistia-player>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
@@ -505,14 +539,17 @@
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
-                        <p class="steps-text text-center">Your <span class="bold">free-consultation</span> call will be a video call
+                        <p class="steps-text text-center">Your <span class="bold">free-consultation</span> call will be
+                            a video call
                             on Google Meets.</p>
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
-                        <p class="steps-text text-center">We will text/email you multiple times with the Google Meet info.</p>
+                        <p class="steps-text text-center">We will text/email you multiple times with the Google Meet
+                            info.</p>
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
-                        <p class="steps-text text-center">Click the link using a computer 5 minutes before the time you scheduled to
+                        <p class="steps-text text-center">Click the link using a computer 5 minutes before the time you
+                            scheduled to
                             join your call!</p>
                     </div>
                 </div>
