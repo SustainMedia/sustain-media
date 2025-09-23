@@ -105,6 +105,18 @@
         max-width: 300px;
     }
 
+    /* .shrink-font {
+        white-space: nowrap !important;
+        font-size: clamp(14px, 6vw, 40px) !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    } */
+
+    .shrink-font { 
+        white-space: nowrap; 
+        overflow: visible; 
+    }
+
     @media only screen and (max-width: 600px) {
         .main-heading {
             font-size: 26px !important;
@@ -171,7 +183,7 @@
                 <div class="flex__center__horizontal position__relative _2">
                     <div class="w-layout-blockcontainer standard__container w-container">
                         <div class="hero-content">
-                            <h1 class="standard__heading level-1 main-heading">
+                            <h1 class="standard__heading level-1 main-heading shrink-font">
                                 YOU'RE BOOKED FOR A FREE CONSULTATION
                             </h1>
                             <div class="spacer-tiny"></div>
@@ -207,9 +219,7 @@
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
 
-                        <h4 class="standard__heading level-3 text-center secondary-heading">Quick Message From Who
-                            You're Speaking With:<br>Noah
-                            Igler</h4>
+                        <h4 class="standard__heading level-3 text-center secondary-heading shrink-font">Quick Message From Who You're Speaking With: Noah Igler</h4>
 
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
@@ -246,7 +256,7 @@
 
                         <div style="max-width: 940px; margin: 0 auto;">
                             <div class="title__block centered">
-                                <h2 class="standard__heading level-2">
+                                <h2 class="standard__heading level-2 shrink-font">
                                     Frequently Asked Questions
                                 </h2>
                                 <div class="spacer-tiny"></div>
@@ -449,9 +459,7 @@
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
 
-                        <h4 class="standard__heading level-3 text-center secondary-heading">Our Google Strategy In
-                            Action:<br>Landscaping
-                            Case Study</h4>
+                        <h4 class="standard__heading level-3 text-center secondary-heading shrink-font">Our Google Strategy In Action: Landscaping Case Study</h4>
 
                         <div class="spacer-tiny"></div>
                         <div class="spacer-tiny"></div>
@@ -544,10 +552,9 @@
                             <div class="spacer-tiny"></div>
                             <div class="spacer-tiny"></div>
                             <div class="spacer-tiny"></div>
-                            <h4 class="standard__heading level-3 text-center">How Their Map Ranking Changed</h4>
+                            <h4 class="standard__heading level-3 text-center shrink-font">How Their Map Ranking Changed</h4>
                             <div class="spacer-tiny"></div>
-                            <p class="text-center standard__heading level-4">From invisible (all red) to top of Google
-                                (all green)!</p>
+                            <p class="text-center standard__heading level-4">From invisible (all red) to top of Google (all green)!</p>
                             <div class="w-layout-blockcontainer standard__container position__relative _1 w-container">
                                 <div>
                                     <div class="before-after-main-box">
@@ -622,7 +629,7 @@
         <div class="standard__section">
             <div class="padding__section header__version">
                 <div class="w-layout-blockcontainer standard__container w-container">
-                    <h3 class="standard__heading level-3 text-center">We Look Forward to Hearing About Your Business!
+                    <h3 class="standard__heading level-3 text-center shrink-font">We Look Forward to Hearing About Your Business!
                     </h3>
                 </div>
             </div>
@@ -709,6 +716,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer=""></script>
     <script src="https://www.youtube.com/s/player/57c75fa4/www-embed-player.vflset/www-embed-player.js"
         defer=""></script>
+    <script src="https://unpkg.com/textfit/textFit.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const lightboxTrigger = document.querySelector(
@@ -726,17 +734,25 @@
                 iframe.allow =
                     "autoplay; fullscreen; encrypted-media; picture-in-picture;";
                 iframe.allowFullscreen = true;
-                // Create a container for the iframe (your lightbox modal content area)
                 const modalContent = document.createElement("div");
                 modalContent.className = "modal-content"; // Ensure this matches your lightbox styling
-                // Append the iframe to the modal content area
                 modalContent.appendChild(iframe);
-                // Display the lightbox/modal with the iframe (replace this with your lightbox opening logic)
                 document.body.appendChild(modalContent); // Example of adding to the body, modify based on your actual lightbox implementation
-                // Implement your own logic to open the modal/lightbox here
                 openLightbox(modalContent); // Placeholder function, replace with your lightbox handling function
             });
         });
+    </script>
+    <script>
+        textFit(document.querySelectorAll('.shrink-font'), {
+            minFontSize: 6,
+            maxFontSize: 56,
+            multiLine: false,
+            widthOnly: true
+        });
+        // re-fit on resize
+        addEventListener('resize', () => textFit(document.querySelectorAll('.shrink-font'), {
+            minFontSize: 6, maxFontSize: 56, multiLine: false, widthOnly: true
+        }));
     </script>
 </body>
 
