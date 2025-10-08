@@ -28,8 +28,13 @@
   <!-- Preload hero image for faster LCP -->
   <link rel="preload" href="https://cdn.prod.website-files.com/66acfd96c2f993953f4147d7/66bd46e37f7d6c7f20f09fbb_IMG_1629.avif" as="image" fetchpriority="high" />
 
-  <!-- Google Fonts (display swap to avoid FOIT) -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Montserrat+Alternates:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts (display swap to avoid FOIT) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Montserrat+Alternates:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Montserrat+Alternates:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Montserrat+Alternates:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap">
+    </noscript>
 
   <!-- Favicons -->
   <link rel="icon" href="images/favicon.png" type="image/png" />
@@ -499,7 +504,7 @@
   <script src="https://fast.wistia.com/embed/3i6lfdbdf2.js" type="module"></script>
 
   <!-- TextFit -->
-  <script src="https://unpkg.com/textfit/textFit.min.js" defer></script>
+  <!-- <script src="https://unpkg.com/textfit/textFit.min.js" defer></script> -->
 
   <!-- Page init -->
   <script defer>
