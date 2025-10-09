@@ -16,10 +16,25 @@
 
   <!-- Preload critical CSS (non-blocking pattern) -->
   <link rel="preload" href="css/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="css/webflow.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="css/blank-media-b0ecb2-cadaeecf447d1391361f.webflow.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/normalize.css">
+  </noscript>
 
+  <link rel="preload" href="css/webflow.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/webflow.css">
+  </noscript>
+
+  <link rel="preload" href="css/blank-media-b0ecb2-cadaeecf447d1391361f.webflow.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/blank-media-b0ecb2-cadaeecf447d1391361f.webflow.css">
+  </noscript>
+
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/style.css">
+  </noscript>
 
   <!-- Preload hero image for faster LCP -->
 
