@@ -37,9 +37,6 @@
   </noscript>
 
   <!-- Preload hero image for faster LCP -->
-  <!-- <link rel="preload"
-    href="https://cdn.prod.website-files.com/66acfd96c2f993953f4147d7/66bd46e37f7d6c7f20f09fbb_IMG_1629.avif" as="image"
-    fetchpriority="high" /> -->
 
   <link rel="preload" as="image" href="./images/bg-lines-image.webp" fetchpriority="high">
 
@@ -83,6 +80,32 @@
       background: #fff;
       margin: 24px 0;
       border: 0
+    }
+
+    .play-btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      background: rgb(0 0 0 / 65%);
+      /* border: 2px solid #fff; */
+      color: #fff;
+      border-radius: 50%;
+      font-size: 3rem;
+      line-height: 1;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+    }
+
+    /* Hover effect */
+    .play-btn:hover {
+      background: rgba(0, 0, 0, 0.884);
+      transform: translate(-50%, -50%) scale(1.1);
     }
 
     .steps-div {
@@ -262,8 +285,7 @@
   <section class="main-section">
 
     <!-- NAV -->
-    <div class="navbar__wrapper w-nav" data-animation="default" data-collapse="medium" data-duration="400"
-      role="banner">
+    <div class="navbar__wrapper w-nav" data-animation="default" data-collapse="medium" data-duration="400" role="banner">
       <div class="standard__container">
         <div class="navbar">
           <a href="#" class="brand__logo w-nav-brand">
@@ -321,9 +343,15 @@
             <div class="widget-featured__video">
               <div class="wistia-lazy" data-embed="f7n90q82ni" data-padding="58.54%"
                 style="position:relative;cursor:pointer;background:#000;padding-top:58.54%;">
-                <img src="https://fast.wistia.com/embed/medias/f7n90q82ni/swatch" alt="Step 1 Video"
-                  style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                <button class="play-btn">▶</button>
+                <img
+                  src="https://embed-ssl.wistia.com/deliveries/fcc2945fa6de5e6e1ba79e69cfa3d72b2e83775b.jpg?image_crop_resized=960x562"
+                  alt="Step 1 Video" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                <button class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" fill="white">
+                    <circle cx="32" cy="32" r="30" stroke-width="2" fill="rgba(255,255,255,0)" />
+                    <polygon points="18,14 52,32 18,50" fill="white" />
+                  </svg>
+                </button>
               </div>
 
             </div>
@@ -355,9 +383,14 @@
                     <div class="video-card__title">How Soon Can I See Results?</div>
                     <div class="wistia-lazy" data-embed="a65skkyxjy" data-padding="177.78%"
                       style="position:relative;cursor:pointer;background:#000;padding-top:177.78%;">
-                      <img src="https://fast.wistia.com/embed/medias/a65skkyxjy/swatch" alt="FAQ 1"
+                      <img src="https://embed-ssl.wistia.com/deliveries/9d23eb6d4a4c3ee8c23fe29486bc777c.jpg?image_crop_resized=720x1280" alt="FAQ 1"
                         style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                      <button class="play-btn">▶</button>
+                      <button class="play-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" fill="white">
+                          <circle cx="32" cy="32" r="30" stroke-width="2" fill="rgba(255,255,255,0)" />
+                          <polygon points="18,14 52,32 18,50" fill="white" />
+                        </svg>
+                      </button>
                     </div>
                   </div>
 
@@ -365,9 +398,14 @@
                     <div class="video-card__title">Do You Optimize For ChatGPT/AI Search?</div>
                     <div class="wistia-lazy" data-embed="84y7co4dfc" data-padding="177.78%"
                       style="position:relative;cursor:pointer;background:#000;padding-top:177.78%;">
-                      <img src="https://fast.wistia.com/embed/medias/84y7co4dfc/swatch" alt="FAQ 2"
+                      <img src="https://embed-ssl.wistia.com/deliveries/dac185691530af8dbfad0f5b9fa10961.jpg?image_crop_resized=720x1280" alt="FAQ 2"
                         style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                      <button class="play-btn">▶</button>
+                      <button class="play-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" fill="white">
+                          <circle cx="32" cy="32" r="30" stroke-width="2" fill="rgba(255,255,255,0)" />
+                          <polygon points="18,14 52,32 18,50" fill="white" />
+                        </svg>
+                      </button>
                     </div>
                   </div>
 
@@ -375,9 +413,14 @@
                     <div class="video-card__title">Do You Help With Google Profile Verification?</div>
                     <div class="wistia-lazy" data-embed="qbobwbtoq8" data-padding="177.78%"
                       style="position:relative;cursor:pointer;background:#000;padding-top:177.78%;">
-                      <img src="https://fast.wistia.com/embed/medias/qbobwbtoq8/swatch" alt="FAQ 3"
+                      <img src="https://embed-ssl.wistia.com/deliveries/7b3c05368640545c6b51f85718073091.jpg?image_crop_resized=720x1280" alt="FAQ 3"
                         style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                      <button class="play-btn">▶</button>
+                      <button class="play-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" fill="white">
+                          <circle cx="32" cy="32" r="30" stroke-width="2" fill="rgba(255,255,255,0)" />
+                          <polygon points="18,14 52,32 18,50" fill="white" />
+                        </svg>
+                      </button>
                     </div>
                   </div>
 
@@ -385,9 +428,14 @@
                     <div class="video-card__title">Do You Require a 6/12 Month Commitment?</div>
                     <div class="wistia-lazy" data-embed="7ns2u6xccl" data-padding="177.78%"
                       style="position:relative;cursor:pointer;background:#000;padding-top:177.78%;">
-                      <img src="https://fast.wistia.com/embed/medias/7ns2u6xccl/swatch" alt="FAQ 4"
+                      <img src="https://embed-ssl.wistia.com/deliveries/05e565c02f3fbde7f63795cecbea2c9a.jpg?image_crop_resized=720x1280" alt="FAQ 4"
                         style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                      <button class="play-btn">▶</button>
+                      <button class="play-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" fill="white">
+                          <circle cx="32" cy="32" r="30" stroke-width="2" fill="rgba(255,255,255,0)" />
+                          <polygon points="18,14 52,32 18,50" fill="white" />
+                        </svg>
+                      </button>
                     </div>
                   </div>
 
@@ -395,9 +443,14 @@
                     <div class="video-card__title">Can I Pay You Per Lead?</div>
                     <div class="wistia-lazy" data-embed="ww1e07gc1f" data-padding="177.78%"
                       style="position:relative;cursor:pointer;background:#000;padding-top:177.78%;">
-                      <img src="https://fast.wistia.com/embed/medias/ww1e07gc1f/swatch" alt="FAQ 5"
+                      <img src="https://embed-ssl.wistia.com/deliveries/3257b77ca7e887442f00eca13401a7ab80899678.jpg?image_crop_resized=720x1280" alt="FAQ 5"
                         style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                      <button class="play-btn">▶</button>
+                      <button class="play-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" fill="white">
+                          <circle cx="32" cy="32" r="30" stroke-width="2" fill="rgba(255,255,255,0)" />
+                          <polygon points="18,14 52,32 18,50" fill="white" />
+                        </svg>
+                      </button>
                     </div>
                   </div>
 
@@ -405,9 +458,14 @@
                     <div class="video-card__title">How Do You Differ From Other Agencies?</div>
                     <div class="wistia-lazy" data-embed="j7c29t47y7" data-padding="177.78%"
                       style="position:relative;cursor:pointer;background:#000;padding-top:177.78%;">
-                      <img src="https://fast.wistia.com/embed/medias/j7c29t47y7/swatch" alt="FAQ 6"
+                      <img src="https://embed-ssl.wistia.com/deliveries/911295172cbb2be95c3fc97b562342e7.jpg?image_crop_resized=720x1280" alt="FAQ 6"
                         style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                      <button class="play-btn">▶</button>
+                      <button class="play-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" fill="white">
+                          <circle cx="32" cy="32" r="30" stroke-width="2" fill="rgba(255,255,255,0)" />
+                          <polygon points="18,14 52,32 18,50" fill="white" />
+                        </svg>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -439,9 +497,14 @@
               <div class="step-3-video">
                 <div class="wistia-lazy" data-embed="3i6lfdbdf2" data-padding="56.25%"
                   style="position:relative;cursor:pointer;background:#000;padding-top:56.25%;">
-                  <img src="https://fast.wistia.com/embed/medias/3i6lfdbdf2/swatch" alt="Case Study"
+                  <img src="https://embed-ssl.wistia.com/deliveries/fd2a143462fd2ccce74dcc58d1f0df9f.jpg?image_crop_resized=960x540" alt="Case Study"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-                  <button class="play-btn">▶</button>
+                  <button class="play-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" fill="white">
+                      <circle cx="32" cy="32" r="30" stroke-width="2" fill="rgba(255,255,255,0)" />
+                      <polygon points="18,14 52,32 18,50" fill="white" />
+                    </svg>
+                  </button>
                 </div>
               </div>
 
@@ -604,7 +667,7 @@
             <div class="w-layout-vflex">
               <a href="https://www.youtube.com/@NoahIglerChiropractorSEO" target="_blank" class="w-inline-block"
                 aria-label="YouTube">
-                <img src="images/1384060.webp" alt="YouTube" class="image-7" width="40" height="40" loading="lazy"
+                <img src="images/1384060.webp" alt="YouTube" class="image-7" width="40" height="55" loading="lazy"
                   decoding="async">
               </a>
             </div>
@@ -612,7 +675,7 @@
               <a href="https://www.youtube.com/@NoahIglerChiropractorSEO" target="_blank" class="w-inline-block"
                 aria-label="Twitter/X">
                 <img src="images/tweeter.webp" alt="Twitter" class="image-7" style="width:71px;margin-left:-10px;"
-                  width="71" height="40" loading="lazy" decoding="async">
+                  width="71" height="74" loading="lazy" decoding="async">
               </a>
             </div>
           </section>
